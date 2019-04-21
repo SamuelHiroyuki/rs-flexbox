@@ -38,7 +38,7 @@ header#main-header .content {
 }
 
 header#main-header .content img.logo {
-    margin-left: 50px;
+    margin: 0 50px;
 }
 
 header#main-header nav {
@@ -117,7 +117,7 @@ header#main-header div.side input:focus {
     color: #000;
 }
 
-header#main-header div.side input::placeholder {
+header#main-header div.side input:focus::placeholder {
     color: #c2c9cf;
 }
 
@@ -223,4 +223,158 @@ div.menubar .content .actions button {
 
 div.menubar .content .actions button:hover {
     background-color: #f5f8fa;
+}
+
+div.wrapper-content {
+    display: flex;
+}
+
+div.wrapper-content aside.profile {
+    width: 265px;
+    min-width: 265px;
+    z-index: 80;
+}
+
+div.wrapper-content aside.profile img.avatar {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -180px;
+}
+
+div.wrapper-content aside.profile h1 {
+    font-size: 21px;
+    color: #14171a;
+    margin-top: 6px;
+    line-height: 1;
+}
+
+div.wrapper-content aside.profile span {
+    font-size: 14px;
+    color: #667580;
+}
+
+div.wrapper-content aside.profile p {
+    font-size: 14px;
+    color: #14171a;
+    margin: 14px 0;
+}
+
+div.wrapper-content aside.profile ul {
+    list-style: none;
+}
+
+div.wrapper-content aside.profile ul li {
+    font-size: 14px;
+    color: #667580;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+div.wrapper-content aside.profile ul li a {
+    color: #206a32;
+    text-decoration: none;
+}
+
+div.wrapper-content aside.profile ul li a:hover {
+    text-decoration: underline;
+}
+
+div.wrapper-content aside.profile ul li img {
+    margin-right: 5px;
+}
+
+div.wrapper-content aside.profile button {
+    width: 260px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #4c875a;
+    background-color: #4c875a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+    padding: 2px 0;
+    margin: 15px 0 10px 0;
+}
+
+div.wrapper-content aside.profile button:hover {
+    background-color: #206a32;
+}
+
+div.wrapper-content aside.profile .widget div.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+div.wrapper-content aside.profile .widget {
+    margin-top: 20px;
+}
+
+div.wrapper-content aside.profile .widget div.title span {
+    color: #206a32;
+}
+
+div.wrapper-content aside.profile .widget div.title:hover {
+    text-decoration: underline #206a32;
+}
+
+div.wrapper-content aside.profile .widget div.title img {
+    margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .followers ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+div.wrapper-content aside.profile .followers ul li {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #d0d5d9;
+    margin: 5px 0 0 5px;
+    flex-shrink: 0;
+}
+
+div.wrapper-content aside.profile .followers ul li:first-child {
+    margin-left: 0;
+}
+
+div.wrapper-content aside.profile .followers ul li:nth-child(6) {
+    margin-left: 0;
+}
+
+div.wrapper-content aside.profile .images {
+    margin-bottom: 16px;
+}
+
+div.wrapper-content aside.profile .images ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+div.wrapper-content aside.profile .images ul li {
+    width: 83px;
+    height: 83px;
+    background-color: #66757f;
+    border-radius: 4px;
+    margin: 8px 0 0 8px;
+    flex-shrink: 0;
+}
+
+div.wrapper-content aside.profile .images ul li:first-child {
+    margin-left: 0;
+}
+
+div.wrapper-content aside.profile .images ul li:nth-child(4) {
+    margin-left: 0;
 }
