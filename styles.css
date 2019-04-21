@@ -476,6 +476,28 @@ div.wrapper-content section.timeline ul.tweets div.tweet-content div.info span {
     padding-left: 6px;
 }
 
+div.wrapper-content section.timeline ul.tweets li.tweets-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweets-footer img {
+    margin-bottom: 5px;
+    filter: brightness(0%);
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweets-footer span {
+    font-size: 13px;
+    color: #14171a;
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweets-footer span:hover {
+    text-decoration: underline;
+}
+
 div.wrapper-content
     section.timeline
     ul.tweets
