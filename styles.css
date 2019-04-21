@@ -237,6 +237,10 @@ div.wrapper-content aside.profile {
     z-index: 80;
 }
 
+div.wrapper-content aside.profile ul li:hover {
+    cursor: pointer;
+}
+
 div.wrapper-content aside.profile img.avatar {
     width: 210px;
     height: 210px;
@@ -321,6 +325,7 @@ div.wrapper-content aside.profile .widget {
 
 div.wrapper-content aside.profile .widget div.title span {
     color: #206a32;
+    cursor: pointer;
 }
 
 div.wrapper-content aside.profile .widget div.title:hover {
@@ -383,6 +388,202 @@ div.wrapper-content aside.profile .images ul li:nth-child(4) {
 
 div.wrapper-content section.timeline {
     flex: 1;
+    background-color: #fff;
+    margin: 10px 10px 15px 25px;
+}
+
+div.wrapper-content section.timeline ul.menu {
+    border-bottom: 1px solid #e6ecf0;
+    list-style: none;
+    display: flex;
+}
+
+div.wrapper-content section.timeline ul.menu li.menu-item.active {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 15px 12px;
+    color: #14171a;
+}
+
+div.wrapper-content section.timeline ul.menu li.menu-item {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 15px 12px;
+    color: #206a32;
+}
+
+div.wrapper-content section.timeline ul.menu li.menu-item:hover {
+    text-decoration: underline;
+}
+
+div.wrapper-content section.timeline ul.menu li.menu-item.active:hover {
+    text-decoration: none;
+}
+
+div.wrapper-content section.timeline ul.tweets {
+    list-style: none;
+}
+
+div.wrapper-content section.timeline ul.tweets li:hover {
+    background-color: #f5f8fa;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content {
+    margin-right: auto;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content > img {
+    border: 1px solid #e6ecf0;
+    border-radius: 10px;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content div.info {
+    position: relative;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    div.info
+    strong {
+    color: #14171a;
+    font-size: 14px;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content p span {
+    color: #206a32;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    p
+    > span
+    + span:hover {
+    text-decoration: underline;
+}
+
+div.wrapper-content section.timeline ul.tweets div.tweet-content div.info span {
+    font-size: 14px;
+    color: #657786;
+    padding-left: 6px;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li {
+    min-width: 80px;
+    display: flex;
+    align-items: baseline;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li.comments:hover {
+    filter: invert(64%) sepia(69%) saturate(4897%) hue-rotate(177deg)
+        brightness(101%) contrast(90%);
+    background-color: transparent;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li.retweet:hover {
+    filter: invert(55%) sepia(75%) saturate(512%) hue-rotate(94deg)
+        brightness(93%) contrast(86%);
+    background-color: transparent;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li.like:hover {
+    filter: invert(24%) sepia(78%) saturate(2525%) hue-rotate(323deg)
+        brightness(90%) contrast(97%);
+    background-color: transparent;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li
+    strong {
+    color: #657786;
+    font-size: 12px;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    ul.tweet-actions
+    li
+    img {
+    margin-right: 5px;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    div.info
+    span
+    + span::before {
+    content: ".";
+    margin: 0 5px;
+    position: absolute;
+    left: 60.5%;
+    top: -2px;
+    color: #657786;
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweet {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    padding: 9px 12px;
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweet img.more {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+div.wrapper-content section.timeline ul.tweets li.tweet img.user {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 div.wrapper-content aside.widgets {
