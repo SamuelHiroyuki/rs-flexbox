@@ -12,7 +12,7 @@ body {
 
 body {
     background-color: #e6ecf0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -102,7 +102,7 @@ header#main-header div.side button:hover {
 
 header#main-header div.side input {
     width: 220px;
-    height: 34px;
+    height: 33px;
     padding: 0 30px 0 12px;
     border-radius: 16px;
     font-size: 12px;
@@ -111,8 +111,19 @@ header#main-header div.side input {
     background: #f5f8fa url("/assets/svg/search.svg") no-repeat 190px center;
 }
 
+header#main-header div.side input:focus {
+    border: 2px solid #206a32;
+    background-color: #fff;
+    color: #000;
+}
+
+header#main-header div.side input::placeholder {
+    color: #c2c9cf;
+}
+
 div.banner {
     height: 320px;
+    background-color: #206a32;
 }
 
 div.banner img {
@@ -121,4 +132,95 @@ div.banner img {
     position: absolute;
     z-index: 1;
     top: 0;
+}
+
+div.menubar {
+    height: 59px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 0;
+    z-index: 2;
+    position: relative;
+}
+
+div.menubar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 330px !important;
+    height: 100%;
+}
+
+div.menubar .content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+div.menubar .content ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    height: 100%;
+}
+
+div.menubar .content ul li.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #206a32;
+}
+
+div.menubar .content ul li.active strong {
+    color: #206a32;
+}
+
+div.menubar .content ul li:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #206a32;
+}
+
+div.menubar .content ul li span {
+    color: #667580;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 1px;
+}
+
+div.menubar .content ul li strong {
+    color: #667580;
+    font-size: 18px;
+}
+
+div.menubar .content .actions {
+    display: flex;
+}
+
+div.menubar .content .actions button {
+    width: 90px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c875a;
+    border: 1px solid #4c875a;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+div.menubar .content .actions button:hover {
+    background-color: #f5f8fa;
 }
