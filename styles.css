@@ -572,10 +572,6 @@ div.wrapper-content aside.widgets ul li span.close {
     font-weight: 700;
 }
 
-div.wrapper-content aside.widgets .trends {
-    margin-top: 10px;
-}
-
 div.wrapper-content aside.widgets div.widget div.find {
     width: 100%;
     height: 140px;
@@ -659,4 +655,59 @@ div.wrapper-content
     div.text-container {
     padding-left: 8px;
     line-height: 0.9;
+}
+
+div.wrapper-content aside.widgets .trends {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+div.wrapper-content aside.widgets .trends div.title {
+    margin-bottom: 10px;
+}
+
+div.wrapper-content aside.widgets .trends ul li {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+div.wrapper-content aside.widgets .trends ul li span.title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #206a32;
+    margin: 0;
+}
+
+div.wrapper-content aside.widgets .trends ul li span.sub {
+    color: #657786;
+    font-size: 12px;
+}
+
+div.wrapper-content aside.widgets .trends ul li span.title:hover {
+    text-decoration: underline;
+}
+
+div.wrapper-content aside.widgets ul.footer {
+    color: #657786;
+    font-size: 12px;
+    padding-right: 8px;
+    margin: 10px 0;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+div.wrapper-content aside.widgets ul.footer li.footer-item {
+    margin-top: 0;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+div.wrapper-content aside.widgets ul.footer li.footer-item:hover {
+    text-decoration: underline #206a32;
+    color: #206a32;
+    cursor: pointer;
 }
