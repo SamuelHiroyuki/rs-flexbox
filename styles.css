@@ -378,3 +378,285 @@ div.wrapper-content aside.profile .images ul li:first-child {
 div.wrapper-content aside.profile .images ul li:nth-child(4) {
     margin-left: 0;
 }
+
+div.wrapper-content section.timeline {
+    flex: 1;
+}
+
+div.wrapper-content aside.widgets {
+    width: 290px;
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets div.widget {
+    background-color: #fff;
+}
+
+div.wrapper-content aside.widgets div.widget div.followers-container {
+    padding: 15px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+div.wrapper-content aside.widgets .title {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+div.wrapper-content aside.widgets .title h3 {
+    color: #14171a;
+    font-size: 18px;
+}
+
+div.wrapper-content aside.widgets .title button {
+    color: #206a32;
+    font-size: 12px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    padding-left: 11px;
+}
+
+div.wrapper-content aside.widgets .title span {
+    color: #206a32;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 11px;
+}
+
+div.wrapper-content aside.widgets .title button:hover {
+    text-decoration: underline #206a32;
+}
+
+div.wrapper-content aside.widgets .title span:hover {
+    text-decoration: underline #206a32;
+}
+
+div.wrapper-content aside.widgets .title button::before {
+    content: ".";
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    color: #14171a;
+}
+
+div.wrapper-content aside.widgets .title span::before {
+    content: ".";
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    color: #14171a;
+}
+
+div.wrapper-content aside.widgets ul {
+    list-style: none;
+}
+
+div.wrapper-content aside.widgets ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6ecf0;
+    padding-bottom: 8px;
+}
+
+div.wrapper-content aside.widgets ul li + li {
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets ul li:last-child {
+    padding-bottom: 15px;
+    border: none;
+}
+
+div.wrapper-content aside.widgets ul li div.wrapper-container {
+    display: flex;
+}
+
+div.wrapper-content aside.widgets ul li div.wrapper-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    button {
+    width: 90px;
+    height: 26px;
+    font-size: 12px;
+    padding: 8px 0;
+    font-weight: bold;
+    color: #206a32;
+    border: 1px solid #206a32;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    button:hover {
+    background-color: #f5f8fa;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    div.info-container
+    strong {
+    color: #14171a;
+    font-size: 14px;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    div.info-container
+    span {
+    font-size: 14px;
+    color: #657786;
+    margin-left: 5px;
+    text-overflow: ellipsis !important;
+    width: 100px;
+    overflow: hidden;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    div.info-container
+    img {
+    width: 13px;
+    height: 13px;
+    margin: 3px 0 3px 3px;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
+    div.info-container {
+    display: flex;
+}
+
+div.wrapper-content aside.widgets ul li span.close {
+    color: #cdd7de;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+div.wrapper-content aside.widgets .trends {
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets div.widget div.find {
+    width: 100%;
+    height: 140px;
+    padding: 15px;
+}
+
+div.wrapper-content aside.widgets div.widget div.find div.outlook {
+    height: 80px;
+    border-bottom: 1px solid #e6ecf0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+div.wrapper-content aside.widgets div.widget div.find span {
+    font-size: 12px;
+    color: #206a32;
+}
+
+div.wrapper-content aside.widgets div.widget div.find span:hover {
+    text-decoration: underline;
+}
+
+div.wrapper-content
+    aside.widgets
+    div.widget
+    div.find
+    div.outlook
+    div.image-container {
+    width: 38px;
+    height: 34px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+}
+
+div.wrapper-content aside.widgets div.widget div.find div.outlook img {
+    width: 24px;
+    height: 24px;
+}
+
+div.wrapper-content
+    aside.widgets
+    div.widget
+    div.find
+    div.outlook
+    div.text-container
+    strong {
+    font-size: 14px;
+}
+
+div.wrapper-content
+    aside.widgets
+    div.widget
+    div.find
+    div.outlook
+    div.text-container
+    span {
+    color: #657786;
+    font-size: 12px;
+    line-height: 2 !important;
+}
+
+div.wrapper-content
+    aside.widgets
+    div.widget
+    div.find
+    div.outlook
+    div.text-container
+    span:hover {
+    text-decoration: none;
+}
+
+div.wrapper-content
+    aside.widgets
+    div.widget
+    div.find
+    div.outlook
+    div.text-container {
+    padding-left: 8px;
+    line-height: 0.9;
+}
