@@ -41,6 +41,8 @@ header#main-header .content {
 
 header#main-header .content img.logo {
     margin: 0 50px;
+    filter: invert(51%) sepia(72%) saturate(2522%) hue-rotate(177deg)
+        brightness(101%) contrast(90%);
 }
 
 header#main-header nav {
@@ -62,7 +64,7 @@ header#main-header nav ul li {
     font-size: 13px;
     font-weight: bold;
     color: #667580;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 header#main-header nav ul li:first-child {
@@ -390,6 +392,7 @@ div.wrapper-content section.timeline {
     flex: 1;
     background-color: #fff;
     margin: 10px 10px 15px 25px;
+    height: 100%;
 }
 
 div.wrapper-content section.timeline ul.menu {
@@ -424,6 +427,14 @@ div.wrapper-content section.timeline ul.tweets {
     list-style: none;
 }
 
+div.wrapper-content section.timeline ul.tweets li {
+    cursor: pointer;
+}
+
+div.wrapper-content section.timeline ul.tweets li:last-child {
+    cursor: auto;
+}
+
 div.wrapper-content section.timeline ul.tweets li:hover {
     background-color: #f5f8fa;
 }
@@ -439,6 +450,19 @@ div.wrapper-content section.timeline ul.tweets div.tweet-content > img {
 
 div.wrapper-content section.timeline ul.tweets div.tweet-content div.info {
     position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    div.info
+    div.user:hover
+    > strong {
+    text-decoration: underline;
+    color: #206a32;
 }
 
 div.wrapper-content
@@ -492,6 +516,7 @@ div.wrapper-content section.timeline ul.tweets li.tweets-footer img {
 div.wrapper-content section.timeline ul.tweets li.tweets-footer span {
     font-size: 13px;
     color: #14171a;
+    cursor: pointer;
 }
 
 div.wrapper-content section.timeline ul.tweets li.tweets-footer span:hover {
@@ -578,7 +603,7 @@ div.wrapper-content
     ul.tweets
     div.tweet-content
     div.info
-    span
+    div.user
     + span::before {
     content: ".";
     margin: 0 5px;
@@ -586,6 +611,27 @@ div.wrapper-content
     left: 60.5%;
     top: -2px;
     color: #657786;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    div.info
+    div.user
+    + span {
+    padding-left: 10px;
+}
+
+div.wrapper-content
+    section.timeline
+    ul.tweets
+    div.tweet-content
+    div.info
+    div.user
+    + span:hover {
+    color: #206a32;
+    text-decoration: underline;
 }
 
 div.wrapper-content section.timeline ul.tweets li.tweet {
@@ -757,6 +803,18 @@ div.wrapper-content
     li
     div.wrapper-container
     div.main-container
+    div.info-container:hover
+    strong {
+    color: #206a32;
+    text-decoration: underline;
+}
+
+div.wrapper-content
+    aside.widgets
+    ul
+    li
+    div.wrapper-container
+    div.main-container
     div.info-container
     span {
     font-size: 14px;
@@ -788,6 +846,7 @@ div.wrapper-content
     div.main-container
     div.info-container {
     display: flex;
+    cursor: pointer;
 }
 
 div.wrapper-content aside.widgets ul li span.close {
@@ -935,4 +994,19 @@ div.wrapper-content aside.widgets ul.footer li.footer-item:hover {
     text-decoration: underline #206a32;
     color: #206a32;
     cursor: pointer;
+}
+
+#main-header div.content nav ul li {
+    height: 100%;
+    padding: 0 10px;
+}
+
+#main-header div.content nav ul li:hover {
+    border-bottom: 2px solid #206a32;
+    color: #206a32;
+}
+
+#main-header div.content nav ul li:hover img {
+    filter: invert(33%) sepia(26%) saturate(1104%) hue-rotate(82deg)
+        brightness(94%) contrast(93%);
 }
